@@ -1,0 +1,5 @@
+export const FETCH_REPOSITORIES = '[Repositories] FETCH_REPOSITORIES';
+export const FETCH_REPOSITORIES_SUCCESS = '[Repositories] FETCH_REPOSITORIES_SUCCESS';
+export const FETCH_REPOSITORIES_ERROR = '[Repositories] FETCH_REPOSITORIES_ERROR';
+
+export const CHANGE_VISIBLE_DATA = '[Repositories] CHANGE_VISIBLE_DATA';

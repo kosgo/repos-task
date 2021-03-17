@@ -1,0 +1,48 @@
+.root {
+  margin: 10px;
+  padding: 10px;
+  width: 275px;
+  border-radius: 4px;
+  box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+}
+
+.title {
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ownerContainer {
+  margin-top: 5px;
+  display: flex;
+}
+
+.ownerName {
+  margin-left: 5px;
+  @extend .link;
+}
+
+.ownerImg {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.description {
+  margin: 10px 0;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.actions {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.link {
+  color: #1976d2;
+  padding: 6px 8px;
+
+  &:hover {
+    background-color: rgba(25, 118, 210, 0.04);
+  }
+}

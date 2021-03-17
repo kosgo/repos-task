@@ -1,26 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { FunctionComponent } from 'react';
+import { Provider } from 'react-redux';
+import configureStore from './store/configureStore';
+import Repositories from './containers/repositories/Repositories';
+import Filters from './containers/filters/Filters';
+import Layout from './components/Layout/Layout';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const store = configureStore();
+
+const App: FunctionComponent = () => (
+    <Provider store={store}>
+        <Layout>
+            <Filters />
+            <Repositories />
+        </Layout>
+    </Provider>
+);
 
 export default App;
